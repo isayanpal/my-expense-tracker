@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
+# My Expense Tracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, intuitive mobile expense tracker application built with **React Native** and **Expo**. This app helps you manage your finances by tracking income and expenses, providing visual statistics, and keeping your data synced with **Supabase**.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Dashboard Overview**: View your current balance, total income, and total expenses at a glance.
+- **Transaction Management**:
+  - Add new income or expense transactions with categories.
+  - Update existing transactions.
+  - Delete unwanted records.
+- **Smart Search**: Filter transactions by category or type instantly.
+- **Visual Statistics**:
+  - **Weekly Breakdown**: Interactive bar charts showing daily spending.
+  - **Monthly Analysis**: Pie charts categorizing your expenses.
+- **Secure Backend**: Real-time data storage and authentication using Supabase.
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Tech Stack
 
-2. Start the app
+- **Framework**: [Expo](https://expo.dev/) (React Native)
+- **Language**: TypeScript
+- **Backend/Database**: [Supabase](https://supabase.com/)
+- **Charts**: `react-native-gifted-charts`
+- **Icons**: `lucide-react-native`
+- **Navigation**: `expo-router`
 
-   ```bash
-   npx expo start
-   ```
+## 📸 Screenshots
 
-In the output, you'll find options to open the app in a
+<div style="display: flex; flex-direction: row; gap: 10px;">
+  <img src="assets/demo/image1.jpeg" width="200" />
+  <img src="assets/demo/image2.jpeg" width="200" />
+  <img src="assets/demo/image3.jpeg" width="200" />
+  <img src="assets/demo/image4.jpeg" width="200" />
+</div>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🔄 Workflow Diagram
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+![Workflow Diagram](assets/demo/expense_tracker.png)
 
-## Get a fresh project
+## 📦 Installation & Running
 
-When you're ready, run:
+Follow these steps to set up the project locally:
 
-```bash
-npm run reset-project
-```
+1.  **Clone the repository:**
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+    ```bash
+    git clone <repository-url>
+    cd my-expense-tracker
+    ```
 
-## Learn more
+2.  **Install dependencies:**
 
-To learn more about developing your project with Expo, look at the following resources:
+    ```bash
+    npm install
+    ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3.  **Set up Environment Variables:**
+    Create a `.env` file in the root directory and add your Supabase credentials:
 
-## Join the community
+    ```env
+    EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
+    EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
 
-Join our community of developers creating universal apps.
+4.  **Run the app:**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+    ```bash
+    npx expo start
+    ```
+
+5.  **Run on Device/Emulator:**
+    - Scan the QR code with the **Expo Go** app (Android/iOS).
+    - Press `a` for Android Emulator.
+    - Press `i` for iOS Simulator.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
