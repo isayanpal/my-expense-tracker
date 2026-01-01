@@ -1,0 +1,13 @@
+name: Monthly Expense Reset
+
+on:
+  schedule:
+    - cron: "0 0 1 * *" # 1st of every month, UTC
+
+jobs:
+  reset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Supabase Edge Function
+        run: |
+          curl -X POST "${{ secrets.SUPABASE_EDGE_FUNCTION_URL }}"
